@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.debug header {
+    max-height: 80px;
+    background-color: rgb(164, 217, 233);
+    padding: 22px;
+}
+
