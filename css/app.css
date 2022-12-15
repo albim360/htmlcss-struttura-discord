@@ -14,15 +14,10 @@ img {
     padding: 15px;
 }
 
-.debug .container {
-    margin: 0 auto;
-}
-
 .debug .row {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    /* padding: 0 200px; */
 }
 
 .debug .col {
@@ -44,6 +39,19 @@ li, nav, ul, ol {
 }
 
 .debug main.first-main{
+    min-height: 475px;
+    background-color: rgb(25, 0, 145);
+}
+
+.first-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-main > .container{
+    background-color: rgb(255, 107, 242);
     min-height: 400px;
-    background-color: blue;
+    min-width: 900px;
+	border: 2px dotted black;
 }
