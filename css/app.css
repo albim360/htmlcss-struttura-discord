@@ -1,76 +1,125 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
+ul,
+ol,
+menu {
+	list-style: none;
 }
 
-.debug header {
-    min-height: 30px;
-    background-color: rgb(164, 217, 233);
-    padding: 15px;
+.container {
+	max-width: 900px;
+	margin: 0 auto;
 }
 
-.navbar > .row {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+.container-small {
+	max-width: 700px;
+	margin: 0 auto;
 }
 
-.debug .navbar .row .col {
-	border: 2px dotted black;
-    line-height: 25px;
-    flex-basis: 190px;
-    background-color: rgb(225, 167, 0); 
+.row {
+	display: flex;
 }
 
-.container div.navbar .col.col-50 {
-	flex-basis: 42%;
-    text-align: center;
+.row-reverse {
+	flex-direction: row-reverse;
 }
 
-li, nav, ul, ol {
-    text-decoration: none;
-    display: inline;
+.justify-between {
+	justify-content: space-between;
 }
 
-.debug section.first-section{
-    min-height: 475px;
-    background-color: rgb(25, 0, 145);
+.items-center {
+	align-items: center;
 }
 
-.first-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-header .row {
+	align-items: center;
 }
 
-.debug .first-section > .container{
-    background-color: rgb(255, 107, 242);
-    min-height: 400px;
-    min-width: 850px;
-	border: 2px dotted black;
+.logo {
+	min-width: 150px;
 }
 
-.debug .second-section {
-    background-color: white;
-    display: flex;
-    min-height: 475px;
-    align-items: center;
-    justify-content: center;
+.page-footer {
+	background-color: #23272a;
+	color: white;
 }
 
-.debug .second-section > .container{
-    min-height: 400px;
-    flex-basis: 1000px;
-	border: 2px dotted black;
+.section {
+	padding: 50px 0;
 }
 
-.second-section .col {
-    min-width: 60%;
-    background-color: cornflowerblue;
-    height: 100%;
+.col-16 {
+	flex-basis: calc(100% / 6);
+}
+
+.col-33 {
+	flex-basis: calc(100% / 3);
+}
+
+.col-40 {
+	flex-basis: 40%;
+}
+
+.col-60 {
+	flex-basis: 60%;
+}
+
+.col-100 {
+	flex-basis: 100%;
+}
+
+.bg-gray {
+	background-color: #d3d3d3;
+}
+
+/* Debug */
+
+.debug .main-header {
+	background-color: #add8e6;
+	padding: 20px 0;
+}
+
+.debug .main-content {
+	/* padding: 30px 0; */
+}
+
+.debug .page-footer {
+	padding: 20px 0;
+}
+
+.debug .container,
+.debug .container-small {
+	padding: 20px;
+	border: 4px dashed rgb(224, 77, 51);
+}
+
+.debug .row {
+	border: 4px dotted cornflowerblue;
+	padding: 30px;
+}
+
+.debug [class^='col'] {
+	border: 3px solid black;
+	padding: 5px 15px;
+}
+
+.debug main [class^='col'] {
+	min-height: 300px;
+}
+
+.debug .hero {
+	background-color: #00008b;
+}
+
+.debug .hero > * {
+	min-height: 500px;
+}
+
+.debug .page-footer [class^='col'] {
+	border-color: white;
 }
