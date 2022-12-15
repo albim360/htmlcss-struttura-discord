@@ -33,11 +33,6 @@ img {
     flex-wrap: nowrap;
 }
 
-.debug main {
-    min-height: 300px;
-    background-color: white;
-}
-
 .row > .col-50 {
 	flex-basis: 42%;
     text-align: center;
@@ -46,5 +41,9 @@ img {
 li, nav, ul, ol {
     text-decoration: none;
     display: inline;
+}
 
+main.first-main{
+    min-height: 400px;
+    background-color: blue;
 }
