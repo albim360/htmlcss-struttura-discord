@@ -9,8 +9,42 @@ img {
 }
 
 .debug header {
-    max-height: 80px;
+    min-height: 50px;
     background-color: rgb(164, 217, 233);
-    padding: 22px;
+    padding: 20px;
 }
 
+.debug .container {
+    margin: 0 auto;
+}
+
+.debug .row {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* padding: 0 200px; */
+}
+
+.debug .col {
+	border: 2px dotted black;
+    line-height: 25px;
+    flex-basis: 190px;
+    background-color: rgb(225, 167, 0); 
+    flex-wrap: nowrap;
+}
+
+.debug main {
+    min-height: 300px;
+    background-color: white;
+}
+
+.row > .col-50 {
+	flex-basis: 42%;
+    text-align: center;
+}
+
+li, nav, ul, ol {
+    text-decoration: none;
+    display: inline;
+
+}
