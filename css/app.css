@@ -9,9 +9,9 @@ img {
 }
 
 .debug header {
-    min-height: 50px;
+    min-height: 30px;
     background-color: rgb(164, 217, 233);
-    padding: 20px;
+    padding: 15px;
 }
 
 .debug .container {
@@ -43,7 +43,7 @@ li, nav, ul, ol {
     display: inline;
 }
 
-main.first-main{
+.debug main.first-main{
     min-height: 400px;
     background-color: blue;
 }
