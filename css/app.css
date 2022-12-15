@@ -14,21 +14,20 @@ img {
     padding: 15px;
 }
 
-.debug .row {
+.navbar > .row {
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
-.debug .col {
+.debug .navbar .row .col {
 	border: 2px dotted black;
     line-height: 25px;
     flex-basis: 190px;
     background-color: rgb(225, 167, 0); 
-    flex-wrap: nowrap;
 }
 
-.row > .col-50 {
+.container div.navbar .col.col-50 {
 	flex-basis: 42%;
     text-align: center;
 }
@@ -38,20 +37,40 @@ li, nav, ul, ol {
     display: inline;
 }
 
-.debug main.first-main{
+.debug section.first-section{
     min-height: 475px;
     background-color: rgb(25, 0, 145);
 }
 
-.first-main {
+.first-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.first-main > .container{
+.debug .first-section > .container{
     background-color: rgb(255, 107, 242);
     min-height: 400px;
-    min-width: 900px;
+    min-width: 850px;
 	border: 2px dotted black;
+}
+
+.debug .second-section {
+    background-color: white;
+    display: flex;
+    min-height: 475px;
+    align-items: center;
+    justify-content: center;
+}
+
+.debug .second-section > .container{
+    min-height: 400px;
+    flex-basis: 1000px;
+	border: 2px dotted black;
+}
+
+.second-section .col {
+    min-width: 60%;
+    background-color: cornflowerblue;
+    height: 100%;
 }
